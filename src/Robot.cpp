@@ -63,11 +63,13 @@ private:
 	{
 
 	}
-
+	int x = .7;
 	void TeleopPeriodic()
 	{
-		rightgo = rightDrive::GetRawAxis 	( 	uint32_t  	axis	);
-		robotDrive->TankDrive(-.7,.7);
+		 // rightgo = rightDrive::GetRawAxis 	( 	uint32_t  	axis	);
+		x = .7;
+		SmartDashboard::PutNumber("x: ", (double)x);
+		robotDrive->TankDrive(x,x);
 	}
 
 	void TestPeriodic()
