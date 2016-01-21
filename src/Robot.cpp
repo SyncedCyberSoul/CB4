@@ -1,5 +1,4 @@
 #include "WPILib.h"
-#include <Joystick.h>
 
 class Robot: public IterativeRobot
 {
